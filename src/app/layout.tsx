@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
+import { Noto_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 
-const notoSans = Noto_Sans({ 
+const notoSans = Noto_Sans({
   subsets: ["latin", "vietnamese"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
-  display: "swap"
+  display: "swap",
+  variable: "--font-noto",
+});
+
+// Mono accent cho chữ Latin / số / wordmark. KHÔNG dùng cho tiếng Việt
+// (Space Mono thiếu dấu) — chỉ gắn qua class .font-accent ở nơi Latin.
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -34,12 +44,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="vi">
+    <html lang="vi" className={`${notoSans.variable} ${spaceMono.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className={notoSans.className}>
+      <body className="crt-veil">
         <LanguageProvider>
           {children}
         </LanguageProvider>
