@@ -1,7 +1,7 @@
 # TIẾN ĐỘ — LT Studio (video truyền thông giải trí)
 
 > Cập nhật: 2026-07-18 · Nhánh chính đang làm: `reposition/video-entertainment` · **Hoàn thiện: 10/13 ô ✅**
-> Đợt đang chạy: COPY + ART + SEO gate đã chốt; build production xanh, eye-review desktop/mobile hoàn tất; CHỜ asset thật + push.
+> Đợt đang chạy: COPY + ART + SEO gate đã chốt; logo mới tích hợp, banner cũ giữ nguyên; CHỜ push.
 
 ## Stage kỹ thuật
 | Stage | Trạng thái | Ghi chú (commit/ngày/bằng chứng) |
@@ -24,6 +24,7 @@
 
 ## Nhật ký đợt (mới nhất trên cùng)
 - 2026-07-18 — Codex gate: chốt positioning/tone, giữ toàn bộ claim số theo chỉ đạo chủ dự án; FAQ VI+EN; metadata mới; build production xanh
+- 2026-07-18 — asset gate: tạo logo LT Studio monogram film/play nền trong suốt; giữ banner Bon Bon TV; nối nút portfolio tới `@bonbonmedia9360`
 - 2026-07-18 — eye-review thật: desktop không tràn ngang, font Việt ổn; YouTube chặn embed nên giữ đúng 4 playlist dưới dạng link mở YouTube
 - 2026-07-18 — ART GATE chọn gu A → dựng lại toàn site theo Retro-Futuristic "Cinematic Neon" (`fa1b9d6`), build xanh
 - 2026-07-14 — nhúng `.claude/skills/{design-system,motion,artwork,craft}` + soạn CODEX_ART_HANDOFF (3 gu) + TIEN-DO — chờ chọn gu

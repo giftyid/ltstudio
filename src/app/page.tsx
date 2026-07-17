@@ -363,7 +363,7 @@ export default function Home() {
 
           <div className="text-center">
             <a
-              href="https://www.youtube.com/playlist?list=UULFnbbGVLEKgBnwGxHro0eD1w"
+              href="https://youtube.com/@bonbonmedia9360"
               target="_blank"
               rel="noreferrer"
               className="btn-neon inline-block text-lg"

@@ -1,6 +1,6 @@
 # CODEX_ART_HANDOFF — LT Studio nâng cấp thẩm mỹ (14/07/2026)
 
-> **ART GATE đã chốt gu A** Retro-Futuristic “Cinematic Neon” và đã dựng. Eye-review production 2026-07-18: desktop không tràn ngang, font Việt ổn, số liệu giữ theo chỉ đạo chủ dự án. Asset thật vẫn chờ bàn giao.
+> **ART GATE đã chốt gu A** Retro-Futuristic “Cinematic Neon” và đã dựng. Eye-review production 2026-07-18: desktop không tràn ngang, font Việt ổn, số liệu giữ theo chỉ đạo chủ dự án. Logo LT Studio mới đã tích hợp; banner Bon Bon TV được giữ nguyên theo chỉ đạo chủ dự án.
 > Đã nhúng `.claude/skills/{design-system,design-motion,design-artwork,design-craft}` vào repo — người thực thi đọc trước khi dựng.
 
 ## 1. Chẩn đoán hiện trạng (vì sao đọc "template")
@@ -43,7 +43,8 @@
 3. Giữ nguyên nội dung `t()` + iframe playlist.
 4. Cập nhật `TIEN-DO.md` cuối đợt.
 
-## 5. Cần user cấp (asset thật, tránh bịa)
-- Logo LT Studio vector/PNG nét (hiện chỉ có text + music-icon).
-- Ảnh hero/showreel thật (thay `banner.jpg` "BON BON TV" — có phải brand hiện tại không?).
-- Xác nhận các link YouTube playlist còn đúng là tác phẩm LT Studio.
+## 5. Asset — ✅ ĐÃ CHỐT 2026-07-18
+- Logo: `public/lt-studio-mark.png`, monogram LT + film/play, nền trong suốt; dùng ở navigation + favicon.
+- Hero: giữ nguyên `public/banner.jpg` “BON BON TV” theo chỉ đạo chủ dự án.
+- Kênh chính: `https://youtube.com/@bonbonmedia9360`; nút “Xem tất cả dự án” mở kênh này.
+- 4 playlist vẫn giữ nguyên ID/link.

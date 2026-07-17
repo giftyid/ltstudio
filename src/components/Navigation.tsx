@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -19,9 +20,14 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3 group">
               <div className="w-11 h-11 neon-frame rounded-sm flex items-center justify-center bg-[#0A0014]">
-                <svg className="w-6 h-6 text-cyan" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/>
-                </svg>
+                <Image
+                  src="/lt-studio-mark.png"
+                  alt=""
+                  width={36}
+                  height={36}
+                  className="w-9 h-9 object-contain"
+                  priority
+                />
               </div>
               <span className="font-accent text-ink text-xl font-bold tracking-[0.22em] glow-cyan">LT&nbsp;STUDIO</span>
             </Link>

@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   description: "LT Studio là studio sản xuất video giải trí và truyền thông tại Việt Nam, thực hiện TVC, video quảng cáo, phim ngắn và nội dung số.",
   keywords: "LT Studio, sản xuất video, video quảng cáo, TVC, video giải trí, truyền thông số, media production, Vietnam",
   authors: [{ name: "LT Studio" }],
+  icons: {
+    icon: "/lt-studio-mark.png",
+  },
   openGraph: {
     title: "LT Studio - Sản xuất Video Giải trí & Truyền thông",
     description: "Studio sản xuất video giải trí và truyền thông tại Việt Nam.",
