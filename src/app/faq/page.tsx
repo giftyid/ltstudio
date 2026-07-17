@@ -11,28 +11,28 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "How do I distribute my music?",
-      answer: "Simply upload your music files, add metadata, and choose your distribution platforms. We'll handle the rest!"
+      question: "What video services does LT Studio offer?",
+      answer: "We produce advertising videos, TVCs, corporate and event videos, short films, and entertainment content for digital platforms."
     },
     {
-      question: "How long does it take for my music to appear on streaming platforms?",
-      answer: "Typically 1-3 business days for most platforms, though some may take up to 7 days."
+      question: "How long does a video project take?",
+      answer: "It depends on the scope — most projects run from a few days to a few weeks from brief to final delivery. We agree on a clear timeline with you before we start."
     },
     {
-      question: "What percentage of royalties do I keep?",
-      answer: "You keep 100% of your royalties. We believe artists should be fairly compensated for their work."
+      question: "Do you handle the whole production process?",
+      answer: "Yes. From concept and scripting to filming, editing and post-production, you work with one team across the entire journey."
     },
     {
-      question: "Can I distribute to all major streaming platforms?",
-      answer: "Yes! We distribute to over 200 digital stores including Spotify, Apple Music, YouTube Music, Amazon Music, and many more."
+      question: "Which platforms are the videos optimized for?",
+      answer: "We deliver in formats optimized for YouTube, TikTok, Facebook, event screens and your website, so your content fits wherever your audience is."
     },
     {
-      question: "Do you provide analytics and reporting?",
-      answer: "Yes, we provide detailed analytics showing your streams, downloads, and earnings across all platforms."
+      question: "Can you help with content strategy, not just production?",
+      answer: "Yes. Beyond the finished video, we can help plan your content and communication so your brand grows over time."
     },
     {
-      question: "Is there a minimum contract period?",
-      answer: "No, there's no minimum contract period. You can cancel anytime while keeping your music live on all platforms."
+      question: "How do I get started?",
+      answer: "Just contact us with your idea. We'll discuss your goals and propose the right approach and timeline."
     }
   ];
 

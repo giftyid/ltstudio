@@ -10,12 +10,12 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "LT Studio - Video Distribution Platform",
+  title: "LT Studio - Sản xuất Video Giải trí & Truyền thông",
   description: "LT Studio is a technology - media and entertainment group established in Vietnam and cooperating globally.",
-  keywords: "LT Studio, video distribution, music distribution, digital media, entertainment, Vietnam",
+  keywords: "LT Studio, sản xuất video, video quảng cáo, TVC, video giải trí, truyền thông số, media production, Vietnam",
   authors: [{ name: "LT Studio" }],
   openGraph: {
-    title: "LT Studio - Video Distribution Platform",
+    title: "LT Studio - Sản xuất Video Giải trí & Truyền thông",
     description: "LT Studio is a technology - media and entertainment group established in Vietnam and cooperating globally.",
     type: "website",
     locale: "vi_VN",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LT Studio - Video Distribution Platform",
+    title: "LT Studio - Sản xuất Video Giải trí & Truyền thông",
     description: "LT Studio is a technology - media and entertainment group established in Vietnam and cooperating globally.",
   },
 };
