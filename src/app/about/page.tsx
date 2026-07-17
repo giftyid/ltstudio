@@ -53,7 +53,7 @@ export default function About() {
                 </svg>
               </div>
               <div className="text-4xl font-bold font-accent text-cyan mb-2">700M+</div>
-              <div className="text-ink-dim font-medium">Views Per Month</div>
+              <div className="text-ink-dim font-medium">{t('millionViews')}</div>
             </div>
             <div className="group neon-panel rounded-xl p-8 text-center hover:scale-105 transition-all duration-300">
               <div className="w-16 h-16 bg-magenta rounded-xl flex items-center justify-center mx-auto mb-4">
@@ -62,7 +62,7 @@ export default function About() {
                 </svg>
               </div>
               <div className="text-4xl font-bold font-accent text-cyan mb-2">30+</div>
-              <div className="text-ink-dim font-medium">Partner Countries</div>
+              <div className="text-ink-dim font-medium">{t('partnerCountries')}</div>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            
+
             <div className="space-y-6">
               <h2 className="text-4xl md:text-5xl font-bold text-ink mb-6">{t('aboutLTStudioTitle')}</h2>
               <p className="text-lg text-ink-dim leading-relaxed">
@@ -242,4 +242,4 @@ export default function About() {
       </div>
     </div>
   );
-} 
+}

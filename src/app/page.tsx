@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -51,14 +52,14 @@ export default function Home() {
             </h1>
 
             <div style={{"--i": 2} as React.CSSProperties}>
-            <button className="btn-neon text-lg">
+            <Link href="/contact" className="btn-neon inline-block text-lg">
               <span className="flex items-center justify-center">
                 <svg className="w-6 h-6 mr-2 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
                 </svg>
                 {t('releaseFirstSingle')}
               </span>
-            </button>
+            </Link>
             </div>
           </div>
         </div>
@@ -76,57 +77,57 @@ export default function Home() {
               <p className="text-lg text-ink-dim leading-relaxed">
                 {t('aboutDescription2')}
               </p>
-              <button className="btn-neon text-lg">
+              <Link href="/about" className="btn-neon inline-block text-lg">
                 <span className="flex items-center">
                   <svg className="w-5 h-5 mr-2 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
                   </svg>
                   {t('readMore')}
                 </span>
-              </button>
+              </Link>
             </div>
-            
+
             <div className="relative">
               <div className="neon-panel rounded-lg p-8">
-              <div className="grid grid-cols-2 gap-6 text-center">
-                <div className="group hover:transform hover:scale-105 transition-all duration-300">
-                  <div className="w-12 h-12 bg-magenta rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
+                <div className="grid grid-cols-2 gap-6 text-center">
+                  <div className="group hover:transform hover:scale-105 transition-all duration-300">
+                    <div className="w-12 h-12 bg-magenta rounded-lg flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                    </div>
+                    <div className="text-4xl font-bold font-accent text-cyan mb-2">100+</div>
+                    <div className="text-ink-dim font-medium">{t('completedProjects')}</div>
                   </div>
-                  <div className="text-4xl font-bold font-accent text-cyan mb-2">100+</div>
-                  <div className="text-ink-dim font-medium">{t('completedProjects')}</div>
-                </div>
-                <div className="group hover:transform hover:scale-105 transition-all duration-300">
-                  <div className="w-12 h-12 bg-magenta rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
-                    </svg>
+                  <div className="group hover:transform hover:scale-105 transition-all duration-300">
+                    <div className="w-12 h-12 bg-magenta rounded-lg flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                      </svg>
+                    </div>
+                    <div className="text-4xl font-bold font-accent text-cyan mb-2">50+</div>
+                    <div className="text-ink-dim font-medium">{t('clients')}</div>
                   </div>
-                  <div className="text-4xl font-bold font-accent text-cyan mb-2">50+</div>
-                  <div className="text-ink-dim font-medium">{t('clients')}</div>
-                </div>
-                <div className="group hover:transform hover:scale-105 transition-all duration-300">
-                  <div className="w-12 h-12 bg-magenta rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
+                  <div className="group hover:transform hover:scale-105 transition-all duration-300">
+                    <div className="w-12 h-12 bg-magenta rounded-lg flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    </div>
+                    <div className="text-4xl font-bold font-accent text-cyan mb-2">5+</div>
+                    <div className="text-ink-dim font-medium">{t('yearsExperience')}</div>
                   </div>
-                  <div className="text-4xl font-bold font-accent text-cyan mb-2">5+</div>
-                  <div className="text-ink-dim font-medium">{t('yearsExperience')}</div>
-                </div>
-                <div className="group hover:transform hover:scale-105 transition-all duration-300">
-                  <div className="w-12 h-12 bg-magenta rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
-                    </svg>
+                  <div className="group hover:transform hover:scale-105 transition-all duration-300">
+                    <div className="w-12 h-12 bg-magenta rounded-lg flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+                      </svg>
+                    </div>
+                    <div className="text-4xl font-bold font-accent text-cyan mb-2">24/7</div>
+                    <div className="text-ink-dim font-medium">{t('support')}</div>
                   </div>
-                  <div className="text-4xl font-bold font-accent text-cyan mb-2">24/7</div>
-                  <div className="text-ink-dim font-medium">{t('support')}</div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -157,7 +158,7 @@ export default function Home() {
           <p className="text-xl text-ink-dim mb-12 max-w-4xl mx-auto">
             {t('findPlanDescription')}
           </p>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-6xl font-bold font-accent text-cyan glow-cyan mb-2">157</div>
@@ -200,12 +201,12 @@ export default function Home() {
               <p className="text-ink-dim mb-6 leading-relaxed">
                 {t('videoProductionDesc')}
               </p>
-              <button className="flex items-center justify-center mx-auto text-cyan hover:text-white font-semibold group-hover:scale-105 transition-all duration-300">
+              <Link href="/contact" className="min-h-11 px-3 flex items-center justify-center mx-auto text-cyan hover:text-white font-semibold group-hover:scale-105 transition-all duration-300">
                 <span>{t('learnMore')}</span>
                 <svg className="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
                 </svg>
-              </button>
+              </Link>
             </div>
 
             <div className="group neon-panel rounded-xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300 border border-white/20 hover:border-cyan">
@@ -218,12 +219,12 @@ export default function Home() {
               <p className="text-ink-dim mb-6 leading-relaxed">
                 {t('entertainmentVideoDesc')}
               </p>
-              <button className="flex items-center justify-center mx-auto text-cyan hover:text-white font-semibold group-hover:scale-105 transition-all duration-300">
+              <Link href="/contact" className="min-h-11 px-3 flex items-center justify-center mx-auto text-cyan hover:text-white font-semibold group-hover:scale-105 transition-all duration-300">
                 <span>{t('learnMore')}</span>
                 <svg className="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
                 </svg>
-              </button>
+              </Link>
             </div>
 
             <div className="group neon-panel rounded-xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300 border border-white/20 hover:border-cyan">
@@ -236,12 +237,12 @@ export default function Home() {
               <p className="text-ink-dim mb-6 leading-relaxed">
                 {t('digitalMediaDesc')}
               </p>
-              <button className="flex items-center justify-center mx-auto text-cyan hover:text-white font-semibold group-hover:scale-105 transition-all duration-300">
+              <Link href="/contact" className="min-h-11 px-3 flex items-center justify-center mx-auto text-cyan hover:text-white font-semibold group-hover:scale-105 transition-all duration-300">
                 <span>{t('learnMore')}</span>
                 <svg className="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -277,16 +278,17 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-ink group-hover:text-cyan transition-colors">{t('projectPlaylist1')}</h3>
               </div>
-              <div className="aspect-video rounded-md overflow-hidden neon-frame scanlines">
-                <iframe
-                  src="https://www.youtube.com/embed/videoseries?list=PL18ObgxsareyYndjRLrWXuiL4EOXVe-hk"
-                  title="Featured Brand Projects"
-                  className="w-full h-full"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              <a
+                href="https://www.youtube.com/playlist?list=PL18ObgxsareyYndjRLrWXuiL4EOXVe-hk"
+                target="_blank"
+                rel="noreferrer"
+                className="aspect-video rounded-md overflow-hidden neon-frame scanlines bg-black/40 flex flex-col items-center justify-center gap-4 text-cyan hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan transition-colors"
+              >
+                <span className="w-20 h-20 rounded-full border border-cyan/50 bg-cyan/10 flex items-center justify-center" aria-hidden>
+                  <svg className="w-10 h-10 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                <span className="font-semibold">{t('openPlaylist')}</span>
+              </a>
             </div>
 
             {/* Second Playlist */}
@@ -299,16 +301,17 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-ink group-hover:text-cyan transition-colors">{t('projectPlaylist2')}</h3>
               </div>
-              <div className="aspect-video rounded-md overflow-hidden neon-frame scanlines">
-                <iframe
-                  src="https://www.youtube.com/embed/videoseries?list=PLaZlSfjykgJRYAPrDK4Z6Mgx_xbvMmQnt"
-                  title="Advertising Videos & TVC"
-                  className="w-full h-full"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              <a
+                href="https://www.youtube.com/playlist?list=PLaZlSfjykgJRYAPrDK4Z6Mgx_xbvMmQnt"
+                target="_blank"
+                rel="noreferrer"
+                className="aspect-video rounded-md overflow-hidden neon-frame scanlines bg-black/40 flex flex-col items-center justify-center gap-4 text-cyan hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan transition-colors"
+              >
+                <span className="w-20 h-20 rounded-full border border-cyan/50 bg-cyan/10 flex items-center justify-center" aria-hidden>
+                  <svg className="w-10 h-10 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                <span className="font-semibold">{t('openPlaylist')}</span>
+              </a>
             </div>
 
             {/* Third Playlist */}
@@ -321,16 +324,17 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-ink group-hover:text-cyan transition-colors">{t('projectPlaylist3')}</h3>
               </div>
-              <div className="aspect-video rounded-md overflow-hidden neon-frame scanlines">
-                <iframe
-                  src="https://www.youtube.com/embed/videoseries?list=PL6k9fllYLnM-LdX2MYUmNDFLEiy_ywfnK"
-                  title="Cinema Productions"
-                  className="w-full h-full"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              <a
+                href="https://www.youtube.com/playlist?list=PL6k9fllYLnM-LdX2MYUmNDFLEiy_ywfnK"
+                target="_blank"
+                rel="noreferrer"
+                className="aspect-video rounded-md overflow-hidden neon-frame scanlines bg-black/40 flex flex-col items-center justify-center gap-4 text-cyan hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan transition-colors"
+              >
+                <span className="w-20 h-20 rounded-full border border-cyan/50 bg-cyan/10 flex items-center justify-center" aria-hidden>
+                  <svg className="w-10 h-10 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                <span className="font-semibold">{t('openPlaylist')}</span>
+              </a>
             </div>
 
             {/* Fourth Playlist */}
@@ -343,28 +347,34 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-ink group-hover:text-cyan transition-colors">{t('projectPlaylist4')}</h3>
               </div>
-              <div className="aspect-video rounded-md overflow-hidden neon-frame scanlines">
-                <iframe
-                  src="https://www.youtube.com/embed/videoseries?list=UULFnbbGVLEKgBnwGxHro0eD1w"
-                  title="Creative Content"
-                  className="w-full h-full"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              <a
+                href="https://www.youtube.com/playlist?list=UULFnbbGVLEKgBnwGxHro0eD1w"
+                target="_blank"
+                rel="noreferrer"
+                className="aspect-video rounded-md overflow-hidden neon-frame scanlines bg-black/40 flex flex-col items-center justify-center gap-4 text-cyan hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan transition-colors"
+              >
+                <span className="w-20 h-20 rounded-full border border-cyan/50 bg-cyan/10 flex items-center justify-center" aria-hidden>
+                  <svg className="w-10 h-10 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                <span className="font-semibold">{t('openPlaylist')}</span>
+              </a>
             </div>
           </div>
 
           <div className="text-center">
-            <button className="btn-neon text-lg">
+            <a
+              href="https://www.youtube.com/playlist?list=UULFnbbGVLEKgBnwGxHro0eD1w"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-neon inline-block text-lg"
+            >
               <span className="flex items-center">
                 <svg className="w-6 h-6 mr-2 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
                 </svg>
                 {t('viewAllProjects')}
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </section>

@@ -21,12 +21,12 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: "LT Studio - Sản xuất Video Giải trí & Truyền thông",
-  description: "LT Studio is a technology - media and entertainment group established in Vietnam and cooperating globally.",
+  description: "LT Studio là studio sản xuất video giải trí và truyền thông tại Việt Nam, thực hiện TVC, video quảng cáo, phim ngắn và nội dung số.",
   keywords: "LT Studio, sản xuất video, video quảng cáo, TVC, video giải trí, truyền thông số, media production, Vietnam",
   authors: [{ name: "LT Studio" }],
   openGraph: {
     title: "LT Studio - Sản xuất Video Giải trí & Truyền thông",
-    description: "LT Studio is a technology - media and entertainment group established in Vietnam and cooperating globally.",
+    description: "Studio sản xuất video giải trí và truyền thông tại Việt Nam.",
     type: "website",
     locale: "vi_VN",
     siteName: "LT Studio",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "LT Studio - Sản xuất Video Giải trí & Truyền thông",
-    description: "LT Studio is a technology - media and entertainment group established in Vietnam and cooperating globally.",
+    description: "Studio sản xuất video giải trí và truyền thông tại Việt Nam.",
   },
 };
 

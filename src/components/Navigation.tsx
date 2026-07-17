@@ -76,7 +76,7 @@ export default function Navigation() {
                 onClick={() => setLanguage('vi')}
                 className={`px-2 py-1 rounded text-sm transition-colors ${
                   language === 'vi' 
-                    ? 'bg-magenta text-[#0A0014] font-bold' 
+                    ? 'bg-magenta text-[#0A0014] font-bold'
                     : 'text-ink-dim hover:text-ink hover:bg-white/5'
                 }`}
               >
@@ -86,7 +86,7 @@ export default function Navigation() {
                 onClick={() => setLanguage('en')}
                 className={`px-2 py-1 rounded text-sm transition-colors ${
                   language === 'en' 
-                    ? 'bg-magenta text-[#0A0014] font-bold' 
+                    ? 'bg-magenta text-[#0A0014] font-bold'
                     : 'text-ink-dim hover:text-ink hover:bg-white/5'
                 }`}
               >
@@ -100,7 +100,10 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-ink-dim hover:text-magenta"
+              className="w-11 h-11 -mr-2 flex items-center justify-center text-ink-dim hover:text-magenta focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan rounded"
+              aria-label={isMenuOpen ? 'Đóng menu' : 'Mở menu'}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-navigation"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -112,7 +115,7 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#0A0014]/97 border-t border-magenta/20">
+        <div id="mobile-navigation" className="md:hidden bg-[#0A0014]/97 border-t border-magenta/20">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link 
               href="/" 
@@ -162,7 +165,7 @@ export default function Navigation() {
                 onClick={() => setLanguage('vi')}
                 className={`px-2 py-1 rounded text-sm transition-colors ${
                   language === 'vi' 
-                    ? 'bg-magenta text-[#0A0014] font-bold' 
+                    ? 'bg-magenta text-[#0A0014] font-bold'
                     : 'text-ink-dim hover:text-ink hover:bg-white/5'
                 }`}
               >
@@ -172,7 +175,7 @@ export default function Navigation() {
                 onClick={() => setLanguage('en')}
                 className={`px-2 py-1 rounded text-sm transition-colors ${
                   language === 'en' 
-                    ? 'bg-magenta text-[#0A0014] font-bold' 
+                    ? 'bg-magenta text-[#0A0014] font-bold'
                     : 'text-ink-dim hover:text-ink hover:bg-white/5'
                 }`}
               >
@@ -184,4 +187,4 @@ export default function Navigation() {
       )}
     </nav>
   );
-} 
+}

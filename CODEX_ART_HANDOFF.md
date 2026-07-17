@@ -1,6 +1,6 @@
 # CODEX_ART_HANDOFF — LT Studio nâng cấp thẩm mỹ (14/07/2026)
 
-> Pha thị giác của "nâng cấp repo bằng agency toolkit". Copy đã tái định vị nhạc→video (xem `CODEX_COPY_HANDOFF.md`). Đây là cổng ART: Claude soạn **3 phương án gu** + ràng buộc rồi DỪNG — không tự dựng lại giao diện. Gate chọn **1 anchor** (không lai ghép), sau đó mới code.
+> **ART GATE đã chốt gu A** Retro-Futuristic “Cinematic Neon” và đã dựng. Eye-review production 2026-07-18: desktop không tràn ngang, font Việt ổn, số liệu giữ theo chỉ đạo chủ dự án. Asset thật vẫn chờ bàn giao.
 > Đã nhúng `.claude/skills/{design-system,design-motion,design-artwork,design-craft}` vào repo — người thực thi đọc trước khi dựng.
 
 ## 1. Chẩn đoán hiện trạng (vì sao đọc "template")
@@ -11,7 +11,7 @@
 → Không có một anchor gu nào được giữ; mọi thứ về default gradient. Đây là thứ cần thay.
 
 ## 2. Điều PHẢI GIỮ (ràng buộc cứng — không phá khi làm đẹp)
-- **Nhúng YouTube playlist thật** ở home (`src/app/page.tsx`, 3 `<iframe>` playlist) — đây là **portfolio thật**, là "hồn" của studio video. Làm đẹp khung, KHÔNG bỏ.
+- **Giữ YouTube playlist thật** ở home (`src/app/page.tsx`, 4 playlist). Eye-review phát hiện chủ video tắt playback ngoài YouTube, nên khung đã đổi thành link mở đúng playlist trên YouTube; không bỏ ID/link portfolio.
 - Hệ song ngữ `useLanguage()`/`t(key)` — mọi chữ đến từ `LanguageContext.tsx`. Không hardcode chữ mới vào JSX.
 - Cấu trúc trang: Home · About · News · FAQ · Contact + nút liên hệ nổi (FB/WhatsApp/tel) + số hotline `+84944.108.872`.
 - **Không bịa dữ liệu** (luật frontend-design §2): không thêm testimonial giả, số liệu giả, tên khách giả. Slot không có nội dung thật thì để trống.
